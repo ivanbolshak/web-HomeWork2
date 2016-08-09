@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+   
+   <h1>Enter registration information</h1>
+   <form method="get" >
+     <table>
+     <tr>
+         <td><label><sup>*</sup> First Name</label></td>
+          <td><input type="text" name="name" placeholder="Enter you name here" required></td>
+      </tr>
+      <tr>
+          <td><label><sup>*</sup>Second Name</label></td>
+          <td><input type="text" placeholder="Enter you Second Name here" required></td>
+      </tr>
+      <tr>
+          <td><label><sup>*</sup>Nickname</label></td>
+          <td><input type="text" name="nickname" placeholder="nickname" required> </td>
+      </tr>
+      <tr>
+          <td><label><sup>*</sup>Enter you E-mail</label></td>
+          <td><input type="email" placeholder="you e-mail" required> </td>
+      </tr>
+      <tr>
+          <td><label><sup>*</sup>Pasword</label></td>
+          <td><input type="password" placeholder="password" required> </td>
+      </tr>
+     
+      <tr>
+          <td><label>Date of birth</label></td>
+          <td><input type="date"> </td>
+      </tr>
+      <tr>
+          <td><label>Gender</label> </td>
+          <td><input type="radio" name="gender" value="male">male
+              <input type="radio" name="gender" value="female">female
+      </tr>
+<!--
+      <tr>
+         <td><label>City</label></td>
+          <td><select name="city">
+              <option value="Dnipro">Dnipro</option>
+              <option value="Kiev">Kiev</option>
+              <option value="Lviv">Lviv</option>
+              <option value="Kharkiv">Kharkiv</option>
+              <option value="Odessa">Odessa</option>
+              <option value="Krivoy Rog">Krivoy Rog</option>
+              <option value="Kherson">Kherson</option>
+              <option value="Sumi">Sumi</option>
+              <option value="Poltava">Poltava</option>
+              
+          </select> </td>
+      </tr>
+-->
+      <tr>
+          <td><label>City</label></td>
+          <td>
+              <input list="findcity">
+              <datalist id="findcity">
+                  <option value="Vinnytsia">Vinnytsia</option>
+                  <option value="Dnipro">Dnipro</option>
+                  <option value="Donetsk">Donetsk</option>
+                  <option value="Zhytomyr">Zhytomyr</option>
+                  <option value="Zaporizhzhia">Zaporizhzhia</option>
+                  <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+                  <option value="Kyiv">Kyiv</option>
+                  <option value="Kirovohrad">Kirovohrad</option>
+                  <option value="Luhansk">Luhansk</option>
+                  <option value="Lutsk">Lutsk</option>
+                  <option value="Lviv">Lviv</option>
+                  <option value="Mykolaiv">Mykolaiv</option>
+                  <option value="Odesa">Odesa</option>
+                  <option value="Poltava">Poltava</option>
+                  <option value="Rivne">Rivne</option>
+                  <option value="Sevastopol">Sevastopol</option>
+                  <option value="Simferopol">Simferopol</option>
+                  <option value="Sumy">Sumy</option>
+                  <option value="Ternopil">Ternopil</option>
+                  <option value="Uzhhorod">Uzhhorod</option>
+                  <option value="Kharkiv">Kharkiv</option>
+                  <option value="Kherson">Kherson</option>
+                  <option value="Khmelnytskyi">Khmelnytskyi</option>
+                  <option value="Cherkasy">Cherkasy</option>
+                  <option value="Chernivtsi">Chernivtsi</option>
+                  <option value="Chernihiv">Chernihiv</option>
+              </datalist>
+          </td>
+      </tr>
+     <tr>
+          <td><input type="submit" value="registration"> </td>
+          <td><input type="reset" value="clear form"> </td>
+      </tr>
+      <tr>
+          <td colspan="2"> <sup>*</sup> - fields requared fo filling</td>
+      </tr>
+     </table>
+    
+   </form>
+    
+</body>
+</html>
